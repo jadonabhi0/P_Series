@@ -4,13 +4,13 @@ import java.util.Stack;
 public class MaxHistogram {
 
     public static void main(String[] args) {
-        int[] array = new int[]{2,1,5,6,2,3};
+        int[] array = new int[]{1,1};
         int[] rb = new int[array.length];
         Stack<Integer> st = new Stack<>();
         st.push(array.length-1);
         rb[array.length-1] = array.length;
         for(int i = array.length-2 ; i >= 0 ; i--){
-            while (st.size() > 0 && array[i] < array[st.peek()]){
+            while (st.size() > 0 && array[i] <= array[st.peek()]){
                 st.pop();
             }
 
@@ -30,7 +30,7 @@ public class MaxHistogram {
         stt.push(0);
         lb[0] = -1;
         for(int i = 1 ; i < array.length ; i++){
-            while (stt.size() > 0 && array[i] < array[stt.peek()]){
+            while (stt.size() > 0 && array[i] <= array[stt.peek()]){
                 stt.pop();
             }
 
