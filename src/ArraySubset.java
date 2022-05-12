@@ -8,7 +8,6 @@ public class ArraySubset {
            ans.add(new ArrayList<>(list));
             return  ans;
         }
-
         generateSubset(array, idx+1, list,ans);
         list.add(array[idx]);
         generateSubset(array, idx+1, list, ans);
@@ -19,7 +18,7 @@ public class ArraySubset {
 
     public static void main(String[] args) {
         ArraySubset subset = new ArraySubset();
-        System.out.println(subset.generateSubset(new int[]{4,4,4,1,4}, 0,new ArrayList<>(), new HashSet<>()));
+        System.out.println(subset.generateSubset(new int[]{1,2,2}, 0,new ArrayList<>(), new HashSet<>()));
 
     }
 }
