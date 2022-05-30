@@ -1,4 +1,5 @@
-import javax.swing.*;
+package permutationAndCombination;
+
 import java.util.*;
 
 public class ArraySubset {
