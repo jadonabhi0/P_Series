@@ -54,7 +54,7 @@ public class ArrayInversion {
     public static void main(String[] args) {
 
 
-        int[] array = new int[]{8,5,3,4,1,6,2};
+        int[] array = new int[]{4, 3, 2, 1};
         ArrayInversion a = new ArrayInversion();
         a.arrayInversion(array);
     }
