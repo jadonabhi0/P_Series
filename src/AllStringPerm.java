@@ -2,6 +2,10 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+
+
+
+
 public class AllStringPerm {
 
    static List<String> list = new LinkedList<>();
