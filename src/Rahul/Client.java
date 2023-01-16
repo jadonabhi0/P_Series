@@ -15,5 +15,6 @@ public class Client {
         list.print();
         list.addAtPos(3, 1000);
         list.print();
+        list.countLength();
     }
 }

@@ -14,6 +14,7 @@ public class MyLinkedList {
         }
     }
 
+
     public Node head;
 
     public void add(int data){
@@ -30,6 +31,7 @@ public class MyLinkedList {
             prev.next = new Node(data);
         }
     }
+
 
     public void addFirst(int data){
         Node temp = new Node(data);
@@ -58,6 +60,15 @@ public class MyLinkedList {
             temp = temp.next;
         }
         System.out.println();
+    }
+    public void countLength(){
+        int count=0;
+        Node temp=head;
+        while(temp!=null){
+            count++;
+            temp=temp.next;
+        }
+        System.out.println(count);
     }
 
 }
