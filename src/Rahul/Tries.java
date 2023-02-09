@@ -6,7 +6,6 @@ import java.util.HashMap;
 
 public class Tries {
 
-
     class Node{
         char ch;
         HashMap<Character, Node> children;
@@ -18,10 +17,8 @@ public class Tries {
         }
     }
 
-
-
-
     private Node root;
+
 
     Tries(){
         this.root = new Node('*');
@@ -67,6 +64,7 @@ public class Tries {
         return cur.isTerminal;
     }
 
+
     public static void main(String[] args) {
         Tries tr = new Tries();
         tr.insert("abhishek");
@@ -76,4 +74,5 @@ public class Tries {
         System.out.println(tr.startsWith("abhih"));
         System.out.println(tr.contains("abhishek"));
     }
+
 }
