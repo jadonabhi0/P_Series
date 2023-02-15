@@ -39,6 +39,9 @@ public class Tries {
     }
 
 
+
+
+
     public boolean startsWith(String str){
         Node cur = this.root;
         for(int i = 0 ; i < str.length() ; i++){
